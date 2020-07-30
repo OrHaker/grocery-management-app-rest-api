@@ -17,11 +17,8 @@ namespace WebApiGroceryManagement.Models
 
         //ctor
         public NoteWithToken(int noteCode, int familyCode, string description, string timeAndDate, string token)
+            :base(noteCode,familyCode,description, timeAndDate)
         {
-            FamilyCode = familyCode;
-            NoteCode = noteCode;
-            Description = description;
-            TimeAndDate = timeAndDate;
             Token = token;
         }
         public NoteWithToken() { }
